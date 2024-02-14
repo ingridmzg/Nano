@@ -1,3 +1,3 @@
 # MTNANO
 
-Programs made during MTNANO (MSc)
+Programs made during Master of Science (MSc) in Nanotechnology
