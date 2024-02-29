@@ -9,7 +9,6 @@ d_values = np.array([0.05, 0.1, 0.2, 0.35, 0.5])
 R_values = np.array([4.73, 4.76, 6.96, 7.12, 9.63])
 
 #linear regression fitted to R(d) = 2*R + B*d
-
 def linear(d, R, B):
     return 2*R + B*d
 
@@ -20,8 +19,6 @@ w = 898.5 * 10**-4 #cm, Z value of the contact
 # Curve fit
 popt, pcov = curve_fit(linear, d_values, R_values)
 
-# Linear regression
-#slope, intercept, r_value, p_value, std_err = linregress(R, d)
 
 # Plot
 plt.scatter(d_values, R_values, label='Original data')
