@@ -19,7 +19,6 @@ w = 898.5 * 10**-4 #cm, Z value of the contact
 # Curve fit
 popt, pcov = curve_fit(linear, d_values, R_values)
 
-
 # Plot
 plt.scatter(d_values, R_values, label='Original data')
 plt.plot(d_values, linear(d_values, *popt), color="red", label='Curve fit')
